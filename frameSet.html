@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>仿猫扑框架页面</title>
+
+    <script type="text/javascript" language="javascript">
+        function set() {
+            if (document.getElementById("main").cols == "100,12,*") {
+                document.getElementById("main").cols = "0,12,*";
+            }
+            else {
+                document.getElementById("main").cols = "100,12,*";
+            }
+        }
+    </script>
+</head>
+<frameset id="main" name="main" cols="100,12,*" framespacing="0" frameborder="0">
+    <frame id="leftframe" name="leftframe" src="left.html" scrolling="auto">
+    <frame id="midframe" name="midframe" src="mid.html" scrolling="auto">
+    <frame id="rightframe" name="rightframe" src="news.html" scrolling="auto">
+</frameset>
+<body>
+</body>
+</html>

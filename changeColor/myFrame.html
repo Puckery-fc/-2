@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>框架页面</title>
+    <script type="text/javascript">
+        var dis=true;
+    function Click()
+    {
+        if(dis){
+            document.getElementById("arrow").src="frame_img/dis.gif";
+            document.getElementById("arrow").title="显示帖子标题列表";
+        }
+        else{
+            document.getElementById("arrow").src="frame_img/hide.gif";
+            document.getElementById("arrow").title="隐藏帖子标题列表";
+        }
+      dis=!dis;
+        parent.Set();
+                }
+</script>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" width="12" border="0">
+    <tr>
+        <td width="12" height="30%"></td>
+    </tr>
+    <tr>
+        <td width="12" height="122">
+            <a href="javascript:Click();" hidefocus="true">
+                <img src="../frame_img/hide.gif" width="12" height="122" id="arrow" name="arrow" title="隐藏帖子标题列表">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td width="12" height="30%"></td>
+    </tr>
+</table>
+</body>
+</html>

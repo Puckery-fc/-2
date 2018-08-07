@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>帖子标题列表</title>
+    <style type="text/css">
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        html, body
+        {
+            height: 100%;
+        }
+        table
+        {
+            height: 100%;
+        }
+        td
+        {
+            background: url(frame_img/mid_bg.gif);
+        }
+        a
+        {
+            outline: none;
+        }
+        img
+        {
+            border: none;
+        }
+    </style>
+    <script type="text/javascript">
+        var dis = true;
+        function Click() {
+            if (dis) {
+                document.getElementById("arrow").src = "frame_img/dis.gif";
+                document.getElementById("arrow").title = "显示帖子标题列表；";
+            }
+            else {
+                document.getElementById("arrow").src = "frame_img/hide.gif";
+                document.getElementById("arrow").title = "隐藏帖子标题列表；";
+            }
+            dis = !dis;
+            window.parent.Sset();
+        }
+    </script>
+</head>
+<body>
+<table cellpadding="0" cellpadding="0" width="12px" border="0">
+    <tr>
+        <td width="12px" height="30%">
+        </td>
+    </tr>
+    <tr>
+        <td height="122px" width="12px">
+            <a href="javascript:Click();" hidefocus="true">
+                <img src="frame_img/hide.gif" width="12px" title="隐藏帖子标题列表" id="arrow" /></a>
+        </td>
+    </tr>
+    <tr>
+        <td width="12px" height="30%">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
